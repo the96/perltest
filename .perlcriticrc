@@ -1,0 +1,21 @@
+severity = 3
+program-extensions = .pl .t
+
+[-Subroutines::ProhibitExplicitReturnUndef]
+
+[-ValuesAndExpressions::ProhibitConstantPragma]
+
+[-ValuesAndExpressions::ProhibitImplicitNewlines]
+
+[-RegularExpressions::RequireExtendedFormatting]
+
+[TestingAndDebugging::RequireUseStrict]
+equivalent_modules = Common::Must
+
+[TestingAndDebugging::RequireUseWarnings]
+equivalent_modules = Common::Must
+
+[Subroutines::ProhibitUnusedPrivateSubroutines]
+allow_name_regex = \A_build_.+
+
+[-Modules::ProhibitAutomaticExportation]
