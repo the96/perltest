@@ -1,6 +1,6 @@
+use Common::Must;
 use Test::Spec;
 
-warn @INC;
 describe 't/ok.t' => sub {
   it 'テストが成功する' => sub {
     ok 1;

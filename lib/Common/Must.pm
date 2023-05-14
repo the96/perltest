@@ -2,10 +2,14 @@ package Common::Must;
 use strict;
 use warnings;
 
-use utf8;
-binmode STDIN,  ":utf8";
-binmode STDOUT, ":utf8";
-
 use feature qw/say/;
+
+sub import {
+  my $class = shift;
+  strict->import();
+  'warnings'->import();
+
+  return;
+}
 
 1;

@@ -19,3 +19,5 @@ equivalent_modules = Common::Must
 allow_name_regex = \A_build_.+
 
 [-Modules::ProhibitAutomaticExportation]
+
+[-Subroutines::ProhibitSubroutinePrototypes]
